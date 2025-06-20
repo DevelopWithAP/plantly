@@ -1,5 +1,5 @@
 import { Text, View, StyleSheet } from "react-native";
-import { theme } from "../theme/theme";
+import { theme } from "@/theme/theme";
 
 export default function ProfileSreen() {
   const styles = StyleSheet.create({
