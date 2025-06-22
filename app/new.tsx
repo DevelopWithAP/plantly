@@ -76,8 +76,9 @@ export default function NewScreen() {
         onChangeText={setDays}
         style={styles.input}
         value={days}
-        placeholder="3 times a week"
+        placeholder="E.g. 3"
         autoCapitalize="words"
+        keyboardType="number-pad"
       />
       <PlantlyButton title="Add plant" onPress={handleSubmit} />
     </ScrollView>
