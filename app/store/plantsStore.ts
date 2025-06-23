@@ -67,6 +67,6 @@ export const usePlantStore = create(
     {
       name: "plantly-plant-store",
       storage: createJSONStorage(() => AsyncStorage),
-    }
-  )
+    },
+  ),
 );
