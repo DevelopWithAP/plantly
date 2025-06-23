@@ -2,7 +2,7 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import { create } from "zustand";
 import { persist, createJSONStorage } from "zustand/middleware";
 
-type PlantType = {
+export type PlantType = {
   id: string;
   name: string;
   wateringFrequency: number;
@@ -67,6 +67,6 @@ export const usePlantStore = create(
     {
       name: "plantly-plant-store",
       storage: createJSONStorage(() => AsyncStorage),
-    },
-  ),
+    }
+  )
 );
